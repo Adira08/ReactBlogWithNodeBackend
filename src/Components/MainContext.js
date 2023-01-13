@@ -6,7 +6,7 @@ const DataContext = (props) => {
     const [data, setData] = useState([]); 
     useEffect(() => {
         async function BackendData () {
-            let content = await fetch("https://backenddatablog.herokuapp.com/api/home");
+            let content = await fetch("https://backenddatablog.onrender.com/api/home");
             content = await content.json();
             console.log(content);
             setData(content);
